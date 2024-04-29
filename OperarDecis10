@@ -1,0 +1,24 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Digite a nota da primeira avaliação (P1):");
+        double notaP1 = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite a nota da segunda avaliação (P2):");
+        double notaP2 = double.Parse(Console.ReadLine());
+
+        double media = (notaP1 + notaP2) / 2;
+
+        Console.WriteLine($"A média do aluno é: {media}");
+
+        if (media >= 5)
+        {
+            Console.WriteLine("Aluno Aprovado");
+        }
+        else
+        {
+            Console.WriteLine("Aluno Reprovado");
+        }
+    }
+}
